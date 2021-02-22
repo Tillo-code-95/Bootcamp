@@ -1,0 +1,24 @@
+Algoritmo sin_titulo
+	
+	Definir contador Como Entero;
+	Para contador = 1  Hasta  10   Con Paso 2 Hacer
+		
+		Escribir " * " , Sin Saltar;
+	Fin Para
+	
+	Escribir " ----------------------------------------------";
+	
+	Definir contador_uno, contador_dos Como Entero;
+	
+	para contador_uno = 1 Hasta 5 Con Paso 1 Hacer
+	// Ejecuta 5 veces bloque hasta línea 14
+	Escribir "Iteracion ", contador_uno, " del bucle externo.";
+	Para contador_dos = 1 Hasta 2 Con Paso 1 Hacer
+		// Ejecuta 2 veces la siguiente línea
+		Escribir "contador_uno: ", contador_uno, "; contador_dos: ", contador_dos;
+	FinPara
+	Escribir "";
+FinPara
+FinAlgoritmo
+	
+
