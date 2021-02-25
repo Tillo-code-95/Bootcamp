@@ -1,25 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheatsheet</title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheatsheet</title>
 </head>
+
 <body>
- <!-- Enlaces Internos -->
-<a href="../blog.html">Ir a blog</a> 
-<a href="https://google.com">Ir a Google</a>
+  <!-- Enlaces Internos -->
+  <a href="../blog.html">Ir a blog</a>
+  <a href="https://google.com">Ir a Google</a>
   <!-- Linea en blanco -->
   <br>
   <!-- Linea separadora -->
   <hr>
-<!-- Titulos / Headings -->
-<h1>Titulo 1</h1>
-<h2>Titulo 2</h2>
-<h3>Titulo 3</h3>
-<h4>Titulo 4</h4>
-<!-- Cada titulo que añadas cambiara de tamaño -->
-<hr>
-<!-- Textos / Paragraphs -->
+  <!-- Titulos / Headings -->
+  <h1>Titulo 1</h1>
+  <h2>Titulo 2</h2>
+  <h3>Titulo 3</h3>
+  <h4>Titulo 4</h4>
+  <!-- Cada titulo que añadas cambiara de tamaño -->
+  <hr>
+  <!-- Textos / Paragraphs -->
+
+  <p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit. Et necessitatibus sapiente ullam voluptas ab? Ad a
+    architecto doloribus maxime repellendus quae quam placeat? <em>Quam ipsam aperiam</em> laboriosam molestiae culpa
+    earum
+    repudiandae maxime perferendis aliquam? Recusandae omnis error soluta, nulla enim, quo tempora, assumenda
+    consectetur ullam quam totam suscipit <s>dolore iste?</s>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, qui. Aut, ullam. Porro deserunt minus harum
+    delectus vitae eveniet nihil eum, non nisi. Laudantium, magni.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusamus id vel molestiae earum dolore
+    voluptas inventore provident! Quasi tenetur aut temporibus, provident ex, esse ipsum nisi quis corrupti mollitia
+    quas maiores vel adipisci saepe atque facilis.
+    Tempora blanditiis quam quas totam sapiente odio cum, perferendis nemo, et aspernatur eaque.
+  </p>
+
+  <p>
+
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis et quisquam ipsam alias, id quo laborum quas
+    hic odit enim omnis. <span class="Quo libero alias architecto commodi eveniet"></span> rerum obcaecati molestiae
+    maiores soluta? Fugiat,
+    ea vel. Dolore esse beatae facilis, est vitae accusantium, soluta, aspernatur voluptas unde repellat enim assumenda
+    blanditiis.
+
+
+  </p>
+  <p>El teorema de pitágoras se conoce por la ecuación de:</p>
+  <p><var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></p>
+  <p>Las clases empiezan a las <time datetime="2021-02-01">dia de comienzo</time>
+  <nav>
+    <a href="">Enlace 1</a>
+    <a href="">Enlace 2</a>
+    <a href="">Enlace 3</a>
+  </nav>
+  <section>
+    <article>
+      <h1>Titulo del articulo</h1>
+      <p>contenido del articulo</p>
+    </article>
+  </section>
+  <aside>
+    <p>Menu generalmente lateral</p>
+
+  </aside>
+  <footer>
+    <p>Pie de página</p>
+    <adress>
+      Malaga ,29007
+    </adress>
+
+  </footer>
+  <div class="container">
+    <p>Contenedor generico de elementos</p>
+
+  </div>
+  <br><br><br><br>
+  <ul>
+    <!--Desordenada-->
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+  <ol start="500">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+    </ul>
+  </ol>
+  <!--tablas/tables-->
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Edad</th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <td>Victor Perez</td>
+      <td>email@gmail.com</td>
+      <td>25</td>
+    </tbody>
+  </table>
+<br><br><br><br><br><br>
+  <!--Formulario/forms-->
+<form action="" method="get">
+  <div class="Imputblock">
+   <label for="nameImput">Nombre:</label>
+   <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre">
+  </div>
+  <br><br><br><br>
+  <div class="Imputblock">
+    <label for="lastNameImput">Apellidos:</label>
+    <input type="text" id="lastNameInput" name="lastName" placeholder="Introduce tus apellidos">
+  </div>
+  <br><br><br><br>
+  <div class="Imputblock">
+    <label for="emailImput">Email:</label>
+    <input type="email" id="emailInput" name="userEmail" placeholder="Introduce tu email">
+  </div><br>
+  <div class="Imputblock">
+    <label for="passwordImput">Contraseña:</label>
+    <input type="password" id="passwordInput" name="passwordImput" placeholder="*************">
+  </div><br>
+
+  <div class="Imputblock">
+    <label for="passwordImput">Contraseña:</label>
+    <input type="password" id="passwordInput" name="passwordImput" placeholder="*************">
+  </div><br>
+  <div class="Imputblock">
+    <label for="sex">Genero:</label><br>
+    <select name="sexinput" id="sexInput">
+      <option value = "" hidden></option>
+      <option value="female">Femenino </option>
+      <option value="male">Masculino</option>
+      <option value = "other">Otro</option>
+    </select>
+  </div><br>
+  <br><br>
+  <input id="ageInput" name="ageInput" type="number" min="0" max="100">
+
+  
+</form>
+  <br><br><br><br><br><br><br><br><br><br>
+  
+
 </body>
+
 </html>
