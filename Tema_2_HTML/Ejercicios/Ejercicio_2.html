@@ -9,9 +9,9 @@
 
 <body>
     <h2>Formulario de Registro</h2>
-    <fieldset>
-        <legend>Informacion Personal</legend>
-        <form action="" method="get">
+    <form action="" method="get">
+        <fieldset>
+        <legend>Información personal</legend>
             <div>
                 <label for="nameInput">Nombre</label>
                 <input type="text" id="nameInput" name="nameInput" placeholder="Victor">
@@ -43,15 +43,67 @@
             <br>
             <fieldset>
                 <legend>Género</legend>
-                <div class="Inputblock">
-                    <input type="radio" name="genderInput" id="womanInput">
-                    <label for=""
-
+                <div Class= "InputBlock"><br>
+                    <input type="radio" id="womanInput" name="genderInput">
+                    <label for="womanInput">Mujer</label>
+                    
+                </div>
+                <div Class= "InputBlock"> <br>
+                    <input type="radio" id="menInput" name="genderInput">
+                    <label for="menInput">Hombre</label>
+                    
+                </div>
+                <div Class="InputBlock"> <br>
+                    <input type="radio" id="otherInput" name="genderInput">
+                    <label for="otherInput">Otro</label>                
+                    
                 </div>
 
-
+                
             </fieldset>
-    </fieldset>
+            <div><br>
+                <label for="countryInput">País</label>
+                <input type="text" id="countryInput" name="placeInput" placeholder="Introduce tu país">
+            </div><br>
+            <div Class="InputBlock">
+                <label for="languageInput">Lenguaje de programación</label>
+                <select name="LanguageType" id="languageInput">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="React">React</option>
+                </select>
+
+            </div><br>
+            <fieldset><br>
+                <legend>Selecciona tu academia</legend>
+                <div Class="InputBlock">
+                    <input type="radio" id="academyInput" name="academyName">
+                    <label for="get" id="academyInput">Code Space Academy</label>
+                </div>
+                <div Class="InputBlock">
+                    <input type="radio" id="academyInput" name="academyName">
+                    <label for="get" id="academyInput">Academia 2</label>
+                </div>
+                <div Class="InputBlock">
+                    <input type="radio" id="academyInput" name="academyName">
+                    <label for="get" id="academyInput">Academia 3</label>
+                </div>
+            </fieldset>
+            
+        </fieldset>
+        <div><br><br>
+            <input type="checkbox" id="checkInput" name="check">
+            <label for="checkInput">Acepto rebibir cientos de correos irrelevantes</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkInput2" name="check2">
+            <label for="checkInput2">Acepto los terminos y condiciones</label>
+        </div><br><br>
+        <button>Enviar</button>
+        <button>Vaciar formulario</button>
+
+
+    </form>
 
 
 
