@@ -1,0 +1,9 @@
+.element{
+    background-color: rgb(238, 229, 229);
+    border: 1.5px solid rgb(80, 77, 77); 
+    width: 40%;
+    height: auto;
+    opacity: none;
+    margin-top: auto;
+    
+}

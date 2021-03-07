@@ -10,11 +10,13 @@
     /*Imagen de fondo*/
     background-image: url(/Ejercicios_CSS/image/Malaga.jpeg) ;
     
+    /* eje x: left center right // eje Y: top center bottom*/
     background-position:center bottom;
 
-    background-repeat:no-repeat;
+    /* Cuando la imagen es mas pequeña que el contenedor*/
+    background-repeat:no-repeat; /*Puede ser repeat o no-repeat*/
 
-    background-size:contain;
+    background-size:contain; /*Puede ser cover|contain|
 
     height: 50vh;
 
@@ -23,18 +25,18 @@
     margin-right: 10px;
     margin-bottom:10px;
     margin-left: 10px;
-    margin: 20px;
+    /* margin: 20px; Seleccionando margin:"Xpx" sobreescribe a los demas datos ya que los engloba a todos  */
     
     /*Bordes*/
-    /*border bottom:seagreen;
-    border-top: yellow;
+    /*border bottom:seagreen;| con bottom especificamos el lado del borde que vamos a tocar
+    border-top: yellow; |le aplicamos left-right-top
     border-width: 5px;
     border-style: solid; */
     
-    border: 5px solid seagreen;
+    border: 5px solid seagreen;/* los bordes pueden ser solid|dashed|dotted
     /*padding*/
-    /*padding-left: 25px;
-    padding-right: 100px;
+    /*padding-left: 25px;| El padding es el encargado de rellenar un determinando
+    padding-right: 100px; | espacio -interno dentro del cuadro- del elemento al que seleccione
     padding-top: 100px;*/
     padding: 100px 25px 50px 0px;
     

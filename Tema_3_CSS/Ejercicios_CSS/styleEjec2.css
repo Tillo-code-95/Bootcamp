@@ -1,0 +1,24 @@
+
+.parent-position{
+    background-color: rgb(224, 216, 216);
+    border: 3px solid rgb(216, 212, 212); 
+    width: 50%;
+    height: 40px;
+    opacity: none;
+    margin-top: 45px;
+    
+}
+
+.position-child-1{
+    float:right;
+    padding-top: 2%;
+    padding-right: 10px;
+
+}
+
+.position-child-2{
+    float:none;
+    padding-top: 2%;
+    padding-left: 10px;
+
+}
