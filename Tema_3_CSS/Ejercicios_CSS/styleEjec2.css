@@ -13,6 +13,8 @@
     float:right;
     padding-top: 2%;
     padding-right: 10px;
+    margin: auto;
+    
 
 }
 
@@ -20,5 +22,5 @@
     float:none;
     padding-top: 2%;
     padding-left: 10px;
-
+    margin:auto
 }

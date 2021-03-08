@@ -3,7 +3,11 @@
     margin: 0;
 }
 
+p::first-letter{
+    font-size: 3em;
+    color: blue;
 
+}
 
 #primero {
     height: 50vh;

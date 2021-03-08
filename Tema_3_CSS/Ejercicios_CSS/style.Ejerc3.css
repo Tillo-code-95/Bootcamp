@@ -1,9 +1,24 @@
-.element{
-    background-color: rgb(238, 229, 229);
-    border: 1.5px solid rgb(80, 77, 77); 
+ul{
+    padding: 0px;
+    cursor:pointer;
     width: 40%;
-    height: auto;
-    opacity: none;
-    margin-top: auto;
-    
 }
+
+ul>li{
+    color:#333;
+    background-color:#ddd;
+    padding: 4px;
+
+    list-style-position: inside;
+    list-style-image: url(image/flechas-dobles.png);
+    border:1px solid rgb(66, 64, 64);
+
+}
+/*Le damos color de fondo a cada uno de los <li>*/
+ul>li:hover {
+    background-color: rgb(200, 198, 194);
+}
+    
+
+    
+
