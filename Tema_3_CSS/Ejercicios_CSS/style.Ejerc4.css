@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
 }
-
+/* General*/
 .container{
     border: 2px solid gray;
     padding: 10px;
 }
-
+/*Header*/
 .top-banner {
     position: relative;
 
@@ -17,24 +17,41 @@
     top: 50%;
     margin-top: -17px;
 }
+/*Aside*/
 .news > a , .news span{
     display: block;
 
 }
 aside{
+    float:left;
     width: 25%;
 }
-
+/*Cuerpo central*/
 section{
     float:right;
     width: 73%;
-    
+    /* height: 30%; */
 }
 .mi-contenido{
     float:left;
     width: 75%;
+    
+}
+.mi-contenido img {
+    float:left;
+    margin-right: 10px;
+  
 }
 .side-content{
     float:right;
     width: 24%;
+     
+}
+.clear{
+    clear:both;
+}
+/*Footer*/
+footer{
+margin-top: 20px;
+clear:both;
 }
