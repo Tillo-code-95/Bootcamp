@@ -1,0 +1,17 @@
+.grid-parent {
+    display:grid;
+    grid-template-areas: "page-title page-title"
+                         "main-content masthead"
+                         "main-content Sidebar"
+                         "footer footer";
+                         
+
+}
+.grid-parent > .page-title {
+
+    grid-area: page-title;
+
+}
+/* .grid-parent > .main-content {
+    grid-area:
+} */
