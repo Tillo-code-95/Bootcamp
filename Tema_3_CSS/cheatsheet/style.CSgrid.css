@@ -87,3 +87,97 @@
 .grid-parent-3 > .grid-child-5 {
     grid-area:footer;
 }
+
+/*ICONOS / ICONS*/
+.menu-icon {
+    color:aquamarine;
+}
+.icon-2 {
+    color:red;
+    
+}
+/* DEGRADADOS O GRADIENTES DE COLOR */
+[class^="gradient"] {
+    height: 200px;
+    margin-bottom: 10px;
+    
+}
+.gradient-1{
+    background: linear-gradient(to right, darkblue, white);
+}
+.gradient-2{
+    background: linear-gradient(to bottom,white, darkblue 20%, white);
+}
+.gradient-3{
+    background: linear-gradient(to bottom, rgba(255, 255, 255,0),rgba(255, 255, 255,1)), url(../Ejercicios_CSS/image/Malaga.jpeg);
+    background-size: cover;
+    
+}
+
+.gradient-4{
+    background: radial-gradient(white, red, yellow);
+    width: 50%;
+    /* height: 300px; */
+    box-shadow: 50px 25px 15px ; /* 1º valor para horizontal*/
+                                /* 2º valor para el vertical*/
+                                /*3º valor para difuminar*/
+}
+
+
+/* Transformaciones */
+
+.transform {
+    height: 100px;
+    width: 100px;
+    background-color: #333;
+    
+    transform: translate(300px, -20px) rotate(45deg) scale(0.7) skewX(25deg) skewY(25deg);
+    /*         Darle valores al contenendor ,rotar ,escala , mover entorno a eje X y eje Y.*/
+}
+
+/* Transiciones */
+
+.transitions {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out; */
+    transition: all 1s ease-in-out;/*forma abreviada*/
+}
+
+.transitions:hover {
+    transform: scale(1,1.5) rotate(3deg);
+}
+
+/* Animaciones */
+.text-animation{
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+
+    } 
+
+    50% {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 100%;
+
+    }
+}

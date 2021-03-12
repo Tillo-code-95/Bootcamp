@@ -1,0 +1,23 @@
+.box-parent{
+    display:grid;
+
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(4, 90px);
+    gap: 10px;
+}
+
+
+
+[class^="box-child"]{
+    background-color: rgb(28, 185, 185);
+    
+
+}
+[class^="box-child"]:hover {
+    transform: scale(1, 1.1)
+}
+
+
+
+
+    
