@@ -3,19 +3,49 @@
 
     grid-template-columns: repeat(4, 90px);
     grid-template-rows: repeat(4, 90px);
-    gap: 10px;
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 
 
 [class^="box-child"]{
-    background-color: rgb(28, 185, 185);
+    background-color: rgb(9, 218, 218);
+
+    animation: appear 2s ease 0.5s 1 normal forwards;
+     opacity: 0; 
+
+    transition: transform 0.3s ease-in-out;
     
 
 }
+
+
 [class^="box-child"]:hover {
     transform: scale(1, 1.1);
 }
+
+.box-child-2 {animation-delay: 1s;}
+.box-child-3 {animation-delay: 1.5s;}
+.box-child-4 {animation-delay: 2s;}
+.box-child-5 {animation-delay: 2.5s;}
+.box-child-6 {animation-delay: 3s;}
+.box-child-7 {animation-delay: 3.5s;}
+.box-child-8 {animation-delay: 4s;}
+.box-child-9 {animation-delay: 4.5s;}
+.box-child-10 {animation-delay: 5s;}
+.box-child-11 {animation-delay: 5.5s;}
+.box-child-12 {animation-delay: 6s;}
+.box-child-13 {animation-delay: 6.5s;}
+.box-child-14 {animation-delay: 7s;}
+.box-child-15 {animation-delay: 7.5s;}
+.box-child-16 {animation-delay: 8s;}
+
+@keyframes appear{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 
 
