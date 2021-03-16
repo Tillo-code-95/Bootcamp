@@ -6,7 +6,7 @@ body {
 .first-container{
     background-color: coral;
     border:3px solid coral ;
-    padding-left: 15px;
+    padding-left: 50px;
 }
 .second-container{
     background-color:rgb(41, 40, 40);
@@ -43,6 +43,7 @@ body {
     color: #333;
     padding-right: 50px;
     box-sizing: border-box;
+    padding-left: 50px;
 }
 .mi-seccion h1 {
     padding-top: 15px;

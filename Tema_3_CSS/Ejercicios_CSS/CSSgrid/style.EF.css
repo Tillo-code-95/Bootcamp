@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+    
+}
+.card {
+border:5px solid rgb(229, 243, 226);
+height: 700px;
+width: 80%;
+
+
+    
+}
+
+form {
+
+
+
+}
+
+.image {
+    height: 20px;
+   
+}

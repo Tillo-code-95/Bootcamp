@@ -53,5 +53,8 @@ section{
 /*Footer*/
 footer{
 margin-top: 20px;
-clear:both;
+/* clear:both; */
+}
+footer > span {
+    float: right;
 }
