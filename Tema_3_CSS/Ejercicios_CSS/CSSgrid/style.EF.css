@@ -9,21 +9,83 @@ body {
     
 }
 .card {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;    
 border:5px solid rgb(229, 243, 226);
-height: 700px;
-width: 80%;
-
-
-    
-}
-
-form {
+height: 90vh;
+width: 90vw;
 
 
 
 }
+.Image {
+   background-image: url(../image/Image_EJF.webp);
+   background-size: cover;
+   
+   
 
-.image {
-    height: 20px;
    
 }
+
+.content  {
+    display: block;
+    margin-left: 60px;
+    
+    
+    
+    
+
+}
+
+#emailInput{
+
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+#passwordInput{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+#button{
+    width: 80%;
+    background-color: rgb(115, 55, 170);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+}
+.github{
+    background-color: rgb(235, 225, 225);
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.twitter{
+    background-color: rgb(235, 225, 225);
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+a {
+ display: block;
+ text-decoration: none;
+ color: rgb(133, 45, 141);
+ margin-top: 20px;
+}
+
