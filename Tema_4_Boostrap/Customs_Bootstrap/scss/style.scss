@@ -1,0 +1,15 @@
+/*Importamos solo los archivos necesarios*/
+@import "../bootstrap-4.6.0/scss/functions";
+@import "../bootstrap-4.6.0/scss/variables";
+
+/*Begins customization*/
+$theme-colors:(
+    "primary":violet,
+);
+    
+
+    
+
+/*End costomization*/
+
+@import "../bootstrap-4.6.0/scss/bootstrap.scss";

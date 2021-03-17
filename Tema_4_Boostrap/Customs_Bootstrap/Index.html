@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css"> -->
+
+    <!-- Custom.CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- content -->
+    <div class="container mt-3 ">
+        <h1>Contenedores</h1>
+    </div>
+    <div class="container bg-light border">contenedor por defecto</div>
+    <div class="container-sm bg-light border">100% ancho hasta breakpoint pequeño</div>
+    <div class="container-md bg-light border">100% ancho hasta breakpoint medio</div>
+    <div class="container-lg bg-light border">100% ancho hasta breakpoint grande</div>
+    <div class="container-xl bg-light border">100% ancho hasta breakpoint extra grande</div>
+    <div class="container-fluid bg-light border">100% ancho siempre</div>
+    <br>
+    <div class="container">
+        <h1>Bootstrap 4 Grid system</h1>
+        <div class="row">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-light border">col-2</div>
+            <div class="col-2 bg-light border">col-2</div>
+            <div class="col-8 bg-light border">col-8</div>
+
+        </div>
+        <div class="row">
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+            <div class="col-1 bg-light border">col-1</div>
+        </div>
+        <h3 class="mt-3">Responsive</h3>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 col-xl bg-light border">col-sm-6 col-lg-4 col-xl</div>
+            <div class="col-sm-6 col-lg-4 col-xl bg-light border">col-sm-6 col-lg-4 col-xl</div>
+            <div class="col-sm-6 col-lg-4 col-xl bg-light border">col-sm-6 col-lg-4 col-xl</div>
+            <div class="col-sm-6 col-lg-12 col-xl bg-light border">col-sm-6 col-lg-12 col-xl</div>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+
+        </div>
+
+
+
+        <h3 class="mt-3">Alineamiento vertical (Flex)</h3>
+        <div class="row align-items-start border bg-success sized">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+        </div>
+
+        <div class="row align-items-center border bg-success sized mt-5">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+        </div>
+        <div class="row align-items-end border bg-success sized mt-5">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+        </div>
+        <div class="row align-items-stretch border bg-success sized mt-5">
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+            <div class="col bg-light border">col</div>
+        </div>
+        <div class="row border bg-success sized mt-5">
+            <div class="col align-self-start bg-light border">col</div>
+            <div class="col align-self-center bg-light border">col</div>
+            <div class="col align-self-end bg-light border">col</div>
+            <div class="col align-self-stretch bg-light border">col</div>
+        </div>
+
+        <h3 class="mt-3">Alineamiento Horizontal (flex)</h3>
+        <div class="row justify-content-start border bg-success mb-2">
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+        </div>
+        <div class="row justify-content-center border bg-success mb-2">
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+        </div>
+        <div class="row justify-content-end border bg-success mb-2">
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+        </div>
+        <div class="row justify-content-around border bg-success mb-2">
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+        </div>
+        <div class="row justify-content-between border bg-success mb-2">
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+            <div class="border bg-light col-2">col</div>
+        </div>
+
+        <h3 class="mt-3">Display none</h3>
+        <div class="row  border bg-success mb-2">
+            <div class="border bg-light col d-none d-lg-block">d-none d-lg-block</div>
+            <div class="border bg-light col">col</div>
+            <div class="border bg-light col">col</div>
+        </div>
+        <h3 class="mt-3">Tamaño y margenes</h3>
+        <div class="row  border bg-success sized mb-2 w-50 pl-5 pr-3 ">
+            <div class="border bg-light col h-75 mt-2">col</div>
+            <div class="border bg-light col h-25">col</div>
+            <div class="border bg-light col h-50">col</div>
+        </div>
+        <button class="btn btn-primary">click me</button>
+
+        <div class="container">
+            <h1 class="Formularios mt-3">Formularios</h1>
+        </div>
+
+
+    </div>
+
+  
+    <div class="div" style="height: 1000px;"></div>
+    <!-- end content -->
+    <script src="JS/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- Script -->
+    
+</body>
+
+</html>
