@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: inherit;
+    margin: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.codespace {
+    display: flex;
+    align-items: center;
+
+}
+.codespace > i{
+
+    margin-right: 10px;
+    color: rgb(172, 77, 77);
+}
+.bell {
+ display:flex;
+ 
+ 
+ 
+}
+.bell > a{
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #6c2bd9;
+}
+
+.image > img{
+
+    border-radius: 50%;
+
+}
+/* Contenido General*/
+.content{
+    display:grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+}
+/* Columna izquierda*/
+.columnleft  {
+    display:flex;
+    flex-direction: column;
+}
+
+.columnleft > a{
+    margin-bottom: 25px;
+}
+
+.link {
+   margin-top: 25px;  
+}
+
+.link > a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(187, 183, 183);
+}
+.link > i  {
+    color:rgb(187, 183, 183) ;
+}
+
+.columnleft > button {
+    margin-top: 20px;
+    background-color: #6c2bd9;
+    border: none;
+    color:white;
+    border-radius: 8px;
+    width: 70%;
+    height:30px;
+
+} 
+
+/* Contenedor Derecho*/
+.head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#6c2bd9;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    
+}
+.head > a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* Parte superior del panel*/
+.panel {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border:none;
+    
+    
+    
+}
+.client{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(248, 245, 245);
+    margin-right: 5px;
+    height: 90px;
+}
+.client > .icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.account{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(248, 245, 245);
+    margin-right: 5px;
+    height: 90px;
+}
+.account > .icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.sales{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(248, 245, 245);
+    margin-right: 5px;
+    height: 90px;
+}
+.sales > .icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.contacts{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(248, 245, 245);
+    margin-right: 5px;
+    height: 90px;
+}
+.contacts > .icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/*Colores de iconos*/
+.first{
+    background-color: rgb(253, 216, 216);
+    color:rgb(236, 12, 23);
+}
+.second{
+    background-color: rgb(214, 248, 191);
+    color: rgb(25, 163, 20);
+}
+.third{
+    background-color: rgb(224, 231, 250);
+    color:blue;
+}
+
+.fourth{
+    background-color: rgb(222, 248, 248);
+    color: teal;
+}
+.icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px ;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width: 100%;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    
+}
+tr > th {
+    text-align:left;
+    border-bottom: 2px solid rgb(228, 222, 222) ;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 30px;
+    
+    
+    
+}
+
+.check{
+    display:flex;
+    align-items: center;
+    
+    
+}
+
+.image {
+    margin-right: 50px;
+}
+
+tbody > td {
+ border-bottom:1px solid rgb(209, 195, 195);
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    
+}
+.foot > a{
+    text-decoration: none;
+    color: rgb(155, 144, 144) ;
+    
+}
+.number > a{
+    text-decoration: none;
+    color: rgb(155, 144, 144) ;
+    
+}
