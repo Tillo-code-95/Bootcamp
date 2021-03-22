@@ -3,7 +3,7 @@ function saludo() {
     alert("Hola desde un script interno");
     console.log("has hecho click");
 }
-document.getElementsByTagName("a").item(1).addEventListener("click", saludo)
+// document.getElementsByTagName("a").item(1).addEventListener("click", saludo)
 
 //-------------- Depuracion(encontrar el error) / logging(crear logs)---------------
 
@@ -168,4 +168,124 @@ console.log(person);
 console.log({});
 
 console.log(typeof {}, typeof [], typeof "");
+
+//This(concepto)
+
+const person2 = {
+    name: "Thomas",
+    talk() {
+    
+        console.log(`Me llamo ${this.name}`);
+    }
+    
+}
+
+person2.talk();
+
+const person3 = {
+    name: "Sarah",
+    talk() {
+    
+        console.log(`Me llamo ${this.name}`);
+    }
+    
+}
+
+person3.talk();
+
+//--------------Arrays----------------
+
+let selectedColors= ["red" , "blue"]; //Array strings
+console.log(selectedColors,selectedColors.length, typeof selectedColors);
+
+selectedColors[2] = "green";//si no existe no lo crea
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.push("violet", "white");
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.pop();//Por defecto solo borra el ultimo valor existente 
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.unshift("white");//Metodo que traslada el ultimo valor a la primera posicion.
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.shift();//Eliminamos el primer valor dentro del array
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.sort();
+console.log(selectedColors, selectedColors.length);
+
+console.log("El color rojo esta en el indice", selectedColors.indexOf("red"));
+
+console.log(selectedColors.slice(1, 3));// Selecciona los colores (1 y 3)
+console.log(selectedColors);
+
+console.log("Los elementos borrados son" , selectedColors.splice(1, 3));// Elimina los colores (1 y 3)
+console.log("El array se ha quedado asi", selectedColors);
+
+selectedColors.splice(1, 1);
+console.log("Los elementos borrados son: ", selectedColors.splice(1, 2));
+
+
+// console.log(selectedColors[selectedColors.indexOf("red")+1]); Para imprimir el elemento siguiente a "red".
+
+/*Crear un niño que tenga las propiedades, nombre, altura, genero , amigoS
+Amigos estara inicialmente vacio y añadiremos posteriormente 3 elementos con los nombres.
+Despues, añadiremos uno extra al inicio.*/
+
+const kid = {
+  name: "Arthur",
+  height:"1.80",
+  gender:"Male",
+  friends: [],
+  perderAmigo() {
+      this.friends.pop();
+    }
+  
+}
+console.log(kid);
+
+
+//posicion de push
+kid.friends.push ("John", "Chase", "Michael");
+console.log(kid);
+
+kid.friends.unshift("Tom");
+console.log(kid);
+
+kid.perderAmigo();
+console.log(kid);
+
+kid.perderAmigo();
+kid.perderAmigo();
+kid.perderAmigo();
+kid.perderAmigo();
+
+console.log(kid);
+
+
+//--------------Conditions----------------
+const randomNumber = 9;
+const guessedNumber = "5";
+
+if (typeof randomNumber !== typeof guessedNumber) {
+    console.log("Hey , tienes que introducir el mismo tipo.");
+}
+if (typeof randomNumber == typeof guessedNumber && randomNumber !== guessedNumber) {
+
+}
+
+if (typeof guessedNumber === "boolean") {
+    
+}
+// if (randomNumber === guessedNumber) {
+//     console.log("has acertado el numero");
+
+// } else if (randomNumber > guessedNumber) {
+//    console.log("El numero secreto es mayor");
+
+// } else {
+//     console.log("El numero secreto es menor");
+// }
 
