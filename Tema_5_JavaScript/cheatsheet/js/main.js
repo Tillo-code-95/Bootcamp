@@ -176,6 +176,8 @@ const person2 = {
     talk() {
     
         console.log(`Me llamo ${this.name}`);
+         /* Siempre que tengamos que hacer referencia al propio objeto(person2) donde estamos
+        lo haremos atraves de "this".*/
     }
     
 }
@@ -187,11 +189,13 @@ const person3 = {
     talk() {
     
         console.log(`Me llamo ${this.name}`);
+       
     }
     
 }
 
 person3.talk();
+console.clear();
 
 //--------------Arrays----------------
 
@@ -201,7 +205,7 @@ console.log(selectedColors,selectedColors.length, typeof selectedColors);
 selectedColors[2] = "green";//si no existe no lo crea
 console.log(selectedColors, selectedColors.length);
 
-selectedColors.push("violet", "white");
+selectedColors.push("violet", "white");// Añade nuevos elementos a un array
 console.log(selectedColors, selectedColors.length);
 
 selectedColors.pop();//Por defecto solo borra el ultimo valor existente 
@@ -213,8 +217,7 @@ console.log(selectedColors, selectedColors.length);
 selectedColors.shift();//Eliminamos el primer valor dentro del array
 console.log(selectedColors, selectedColors.length);
 
-selectedColors.sort();
-console.log(selectedColors, selectedColors.length);
+selectedColors.sort();//Para ordenar elementos alfabeticamente(incluso arrays de objetos)
 
 console.log("El color rojo esta en el indice", selectedColors.indexOf("red"));
 
