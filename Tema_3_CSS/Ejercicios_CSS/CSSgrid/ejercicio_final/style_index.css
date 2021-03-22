@@ -196,26 +196,50 @@ table{
     background-color: rgb(255, 255, 255);
     
 }
+.title > h5  {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+  
+.title > h6  {
+    margin-top: 3px;
+    margin-bottom: 25px;
+
+}
+
 tr > th {
-    text-align:left;
+    text-align: center;
     border-bottom: 2px solid rgb(228, 222, 222) ;
     padding-bottom: 10px;
     padding-top: 20px;
-    padding-right: 30px;
-    
-    
-    
+    padding-right: 30px; 
 }
 
-.check{
+.check {
     display:flex;
     align-items: center;
     
+}
+
+.status {
+ 
+    text-align: center;
+
+}
+
+.money{
     
+    text-align: center;
+
+}
+
+.data {
+    text-align: center;
 }
 
 .image {
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 tbody > td {
@@ -239,3 +263,7 @@ tbody > td {
     color: rgb(155, 144, 144) ;
     
 }
+
+
+
+
