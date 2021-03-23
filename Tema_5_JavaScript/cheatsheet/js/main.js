@@ -139,8 +139,15 @@ let person = {
 
     jump() {
         console.log("Hey, estoy saltando")
+    },
+
+    presentarse() {
+        console.log(`Me llamo ${this.name}, tengo ${this.age} años y ${this.blonde ? "soy rubio" : "soy moreno"}`); 
     }
-} //ES6
+
+} 
+person.presentarse();
+//ES6
 
 console.log(typeof person, person);
 console.log(`Se llama ${person.name} y tiene ${person.age} años`);
@@ -291,4 +298,177 @@ if (typeof guessedNumber === "boolean") {
 // } else {
 //     console.log("El numero secreto es menor");
 // }
+
+// Ternanry operator (operador ternanrio(para simplificar el if/ else))
+
+//Damos valor a una variable con un operando ("="->if),("?" -> )
+
+let variable = 12 < 10 ? "es menor" : "el primero es mayor";
+console.log(variable);
+
+/*presentarse() {
+    console.log(`Me llamo ${this.name}, tengo ${this.age} años y ${this.blonde ? "soy rubio" : "soy moreno"}`); 
+}
+
+} 
+person.presentarse();*/
+
+//Switch
+
+let option = 2;
+
+switch (option) {
+    case 1:
+        //Bloque de codigo de valor 1
+        console.log("Option vale 1");
+        break;
+
+    case 2:
+        //Bloque de codigo de valor 2
+        console.log("Option vale 2");
+        break;
+
+    case 3:
+        //Bloque de codigo de valor 3
+        console.log("Option vale 3");
+        break;
+
+    default: // De otro modo de Pseint
+        console.log("otra opcion");
+        break;
+}
+console.clear();
+//--------------Funciones----------------
+
+//--------------Nombradas
+function greet(name, lastName) {
+    console.log(`Hola, ${name} ${lastName}. ¿Que tal?`);
+    
+}
+greet();
+greet("Marcos" , "Aurelio");
+
+//Cuadrado de un numero
+function cuadrado(num1) {
+    let cuadrado = num1 * num1;
+    return cuadrado;
+    
+}
+console.log(cuadrado(3));
+
+// Forma simplificada(Usando return)
+
+function cuadrado(num1) {
+    
+    return num1 * num1;
+    // return rompe o para la funcion lo que hay detras o debajo es inalcanzable.
+}
+console.log(cuadrado(5));
+
+//--------------Anónimas
+
+let numbersArray = [5, 51, 1, 15, 2];
+console.log(numbersArray);
+numbersArray.sort(); // Me lo ordena segun ASCII
+console.log(numbersArray);
+
+
+
+function orderNumbers(a, b) {
+
+    if (a < b) {
+        return -1;
+    } else if (a === b) {
+        return 0;
+    }else {
+        return 1;
+    }
+}
+
+// function orderNumbersV2(a, b) {
+//     return a - b;
+// }
+
+
+numbersArray.sort(function (a, b) {return a - b});
+
+
+// numbersArray.sort(orderNumbers);
+// console.log(numbersArray); 
+
+console.clear();
+
+//--------------Funciones de flecha (Arrow function)
+
+let perimeterOfSquare = function (side) { // Función anónima normal
+    return side * 4;
+    }
+perimeterOfSquare = function (side) {return side * 4;} // (opcional) Una única línea
+perimeterOfSquare = (side) => {return side * 4;} // Sustituyo function por la flecha después de params.
+perimeterOfSquare = (side) => side * 4; // Si sólo quiero devolver algo, quito llaves y return.
+perimeterOfSquare = side => side * 4; // Si sólo tiene 1 param, puedo quitar paréntesis.
+    
+    console.log(perimeterOfSquare(5));
+
+// console.log(typeof function() {});
+// console.log(typeof (() => {}));
+
+
+
+//Como transformar fuc anonima en func de flecha
+//Cuadrado de un numero con arrows
+function square(num1) {
+    let square = num1 * num1;
+    return cuadrado;
+    
+}
+console.log(cuadrado(3));
+
+square = (num1) => num1 * num1;
+console.log(square(5));
+
+
+console.clear();
+
+//--------------Bucles(Loops)----------------
+
+//--------------For
+for (let i = 0; i <= 10; i++) {
+    
+    console.log(`Indice: ${i}`);
+    
+}
+//Definir y rellenar un array con el indice i
+
+const arrayJ = [];
+
+
+
+for (let i = 0; i <= 10; i++) {
+    
+    arrayJ.push(i);
+    
+}
+console.log(arrayJ);
+
+//While
+
+let contador = 0;
+
+while (contador <= 10) {
+
+    console.log(contador);
+    contador ++;
+}
+
+while (true) {
+
+    break;
+}
+
+// ForEach (Se aplica a los arrays)
+
+numbersArray.forEach(function (value , index){
+    console.log(`Indice ${index}: ${value}`);
+});
 
