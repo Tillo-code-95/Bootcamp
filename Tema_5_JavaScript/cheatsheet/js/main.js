@@ -517,6 +517,7 @@ let i = 0;
 let k = 0;
 
 mainLoop: while (true) {
+   
     console.log("Outer loop" , i);
     i++;
 
@@ -525,7 +526,7 @@ mainLoop: while (true) {
     while (true){
         console.log("Inner loop" , k);
         k++;
-        if (i === 5 && k===5){
+        if (i === 5 && k === 5){
                 
             break mainLoop;
 
