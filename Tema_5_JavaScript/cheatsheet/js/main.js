@@ -466,9 +466,74 @@ while (true) {
     break;
 }
 
+console.clear();
 // ForEach (Se aplica a los arrays)
+// ¡Metodo excluisvo de los arrays!
 
 numbersArray.forEach(function (value , index){
     console.log(`Indice ${index}: ${value}`);
 });
+
+// myFunction(numbersArray[0], 1, numbersArray);
+// myFunction(numbersArray[1], 2, numbersArray);
+// myFunction(numbersArray[2], 5, numbersArray);
+// myFunction(numbersArray[3], 15, numbersArray);
+// myFunction(numbersArray[4], 51, numbersArray);
+
+// Es lo mismo que hace en forEach.
+
+numbersArray.forEach((value,index) => console.log(`Indice ${index}: ${value}`));
+
+let otherArray = [];
+
+console.log();
+
+numbersArray.forEach(item => otherArray.push(item));
+
+console.log(otherArray);
+
+// For of
+// Sirve para iterar tanto los elementos de un array como para strings
+// todo lo que tenga elentos dentro.
+
+for (let item of numbersArray) { 
+                                
+    console.log(item);
+}
+
+console.clear();
+//---------------Break y Continue
+
+for (let i = 0 ; i < 5; i++) {
+    if (i === 3 || i === 2) {
+        
+        continue; // Salta a la siguiente iteracion.
+    }
+    console.log("using continue" , i);
+}
+
+//Break
+let i = 0;
+let k = 0;
+
+mainLoop: while (true) {
+    console.log("Outer loop" , i);
+    i++;
+
+    k = 1;
+
+    while (true){
+        console.log("Inner loop" , k);
+        k++;
+        if (i === 5 && k===5){
+                
+            break mainLoop;
+
+            
+        } else if (k === 5){
+            break;
+        }
+    }
+
+}
 
