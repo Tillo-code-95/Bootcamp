@@ -38,43 +38,44 @@ if (nota >= 9 && nota < 10) {
 }
 
 console.clear();
+// Pide una nota (numero). Muestra la calificacion segun la nota:
 // switch
 
-const note = 10;
+const note = 6.5;
 
 switch (note) {
-    case 1: (note > 0 && note < 3)
+    case (note > 0 && note < 3) :
 
         console.log("Muy deficiente");
 
         break;
 
-    case 2: (note > 3 && note < 5)
+    case (note > 3 && note < 5) :
 
         console.log("Insuficiente");
 
         break;
 
-    case 3: (note >= 5 && note < 6)
+    case (note >= 5 && note < 6) :
 
         console.log("Suficiente");
 
         break;
 
-    case 4: (note >= 6 && note < 7)
+    case  (note >= 6 && note < 7) :
 
         console.log("Bien");
 
         break;
 
-    case 5: (note >= 7 && note < 8)
+    case(note >= 7 && note < 8) :
 
         console.log("Notable");
 
         break;
 
 
-    case 6: (note >= 9 && note < 10)
+    case (note >= 9 && note < 10) :
 
         console.log("Sobresaliente");
 
