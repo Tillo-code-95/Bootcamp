@@ -38,56 +38,56 @@ if (nota >= 9 && nota < 10) {
 }
 
 console.clear();
-// Pide una nota (numero). Muestra la calificacion segun la nota:
-// switch
+// // Pide una nota (numero). Muestra la calificacion segun la nota:
+// // switch
 
-const note = 6.5;
+// const note = 6.5;
 
-switch (note) {
-    case (note > 0 && note < 3) :
+// switch (note) {
+//     case (note > 0 && note < 3) :
 
-        console.log("Muy deficiente");
+//         console.log("Muy deficiente");
 
-        break;
+//         break;
 
-    case (note > 3 && note < 5) :
+//     case (note > 3 && note < 5) :
 
-        console.log("Insuficiente");
+//         console.log("Insuficiente");
 
-        break;
+//         break;
 
-    case (note >= 5 && note < 6) :
+//     case (note >= 5 && note < 6) :
 
-        console.log("Suficiente");
+//         console.log("Suficiente");
 
-        break;
+//         break;
 
-    case  (note >= 6 && note < 7) :
+//     case  (note >= 6 && note < 7) :
 
-        console.log("Bien");
+//         console.log("Bien");
 
-        break;
+//         break;
 
-    case(note >= 7 && note < 8) :
+//     case(note >= 7 && note < 8) :
 
-        console.log("Notable");
+//         console.log("Notable");
 
-        break;
-
-
-    case (note >= 9 && note < 10) :
-
-        console.log("Sobresaliente");
-
-        break;
+//         break;
 
 
-    default:
+//     case (note >= 9 && note < 10) :
 
-        console.log("La nota introducida no es correcta");
+//         console.log("Sobresaliente");
+
+//         break;
+
+
+//     default:
+
+//         console.log("La nota introducida no es correcta");
         
-        break;
-}
+//         break;
+// }
 
 
 //Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. 

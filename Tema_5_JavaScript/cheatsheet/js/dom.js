@@ -11,7 +11,7 @@ console.log(document.title);
 console.log(document.lastModified);
 
 
-//--------Selectors
+//--------Selectors/Selectores
 
 const family = document.getElementsByTagName("div");
 console.log(family);
@@ -79,7 +79,7 @@ myDiv.classList.add("child");// añade nueva clase
 myDiv.textContent = "child 2.5"; // añade nuevo texto
 
 let myDiv2 = myDiv;
-parent2.appendChild(myDiv);
+parent2.appendChild(myDiv); // anexar elemento dentro de otro
 parent1.appendChild(myDiv); // MISMO nodo con 2 nombres diferentes
 
 
@@ -111,6 +111,70 @@ parent2.appendChild(newDiv);
 parent2.appendChild(table);
 
 
+
+// ------------Eventos------------
+
+// Al seleccionar ("button") nos devuelve html collection y se le añade[0],
+// para que seleccione el elementeo button dentro de ese html colection.
+
+
+const colorButton = document.getElementsByTagName("button")[0];
+
+//
+colorButton.addEventListener("click", function (event){
+    //console.log(event);
+    //console.log(event.target);
+    //document.body.style.backgroundColor = 
+    // document.body.classList.toggle("bg-red");
+    //console.log(event.target.tagName);
+
+    if (event.ctrlKey) {
+        document.body.classList.toggle("bg-red");
+    }
+    console.log(`X : ${event.clientX} | Y: ${event.clientY}`);
+    console.log(`Alt: ${event.altKey}. Shift: ${event.shiftKey}. Ctrl: ${event.ctrlKey}`);
+});
+
+const emailInput = document.querySelector("#emailInput");
+
+emailInput.addEventListener("focus", inputListener);
+emailInput.addEventListener("blur", inputListener);
+
+
+function inputListener (e) {
+    //console.log(e.target);
+    console.log("Tipo de evento: ", e.type);
+
+    // if (e.type === "focus") {
+    //     e.target.classList.add("bg-red");
+
+    // } else if (e.type === "blur") {
+    //     e.target.classList.remove("bg-red");
+    // }
+    
+}
+
+const changeTitle = e => {
+
+    document.querySelectorAll("h1")[2].textContent = emailInput.value;
+}
+
+emailInput.addEventListener("keydown", inputListener);
+emailInput.addEventListener("keyup", changeTitle);
+
+const container = document.getElementById("container");
+
+container.addEventListener("mouseover", inputListener);
+container.addEventListener("mouseout",inputListener);
+
+//--------------Coords-----------
+
+function coords (e) {
+   const h1 = document.querySelectorAll("h1")[3];
+   h1.textContent = `X: ${e.clientX} | Y: ${e.clientY}`;
+}
+
+document.body.addEventListener("mousemove" , coords);
 
 
 
