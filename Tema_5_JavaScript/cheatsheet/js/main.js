@@ -301,7 +301,7 @@ if (typeof guessedNumber === "boolean") {
 
 // Ternanry operator (operador ternanrio(para simplificar el if/ else))
 
-//Damos valor a una variable con un operando ("="->if),("?" -> )
+//Damos valor a una variable con un operando ("="->if),("?" -> Entonces ) (: -> Sino)
 
 let variable = 12 < 10 ? "es menor" : "el primero es mayor";
 console.log(variable);
