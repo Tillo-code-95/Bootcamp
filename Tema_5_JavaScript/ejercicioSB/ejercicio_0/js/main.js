@@ -27,17 +27,12 @@ console.log(myArray, myArray.length);
 
 console.log("APARTADO 3");
 
-function myNote (note) {
-
-    if (note >= 5) {
-        return true ;
-    } else {
-
-        return false;
-    }
-    
+function isBool(value) {
+    return typeof value === "boolean";
 }
-console.log(myNote (4));
+console.log(isBool(true));
+console.log(isBool("true"));
+console.log(isBool(5));
 
 //Apartado - 4 / Escribe una función que devuelva 
 //la longitud de un string recibido por argumento.
@@ -203,17 +198,24 @@ console.log(address2);
 
 console.log("APARTADO 13");
 
-let c = "Codespaceacademy.com";
+// let c = "Codespaceacademy.com";
 
 function parseDomain(p) {
 
-    p = p.split(".");
-
+   const array = p.split(".");
     
-console.log(p);
+    const object = {
+        Domain : array[0],
+        tld : array[1]
+    }
+
+    return object
+
 }
 
-parseDomain(c);
+console.log(parseDomain("Codespaceacademy.com"));
+console.log(parseDomain("Besoccer.com"));
+console.log(parseDomain("Elpais.es"));
 
 // Apartado 14. Nos han prohibido el uso del operador de igualdad estricta (===), pero queremos poder seguir utilizando
 //dicha funcionalidad. Crea una función que devuelva true si dos números tienen el mismo valor y el
@@ -223,7 +225,7 @@ console.log("APARTADO 14");
 
 function myNumber (n, m) {
 
-    if (typeof n == typeof m  &&  typeof Number == typeof Number) {
+    if (typeof n == typeof m  &&  n == m) {
 
         console.log(`El resultado del apartado-14 es :`,true);
 
@@ -355,7 +357,7 @@ misVotos(35 , 15);
 
 console.log("APARTADO 20");
 
-let objetos = ["String", 4.5, undefined , [],   "codespace", {}] ;
+let objetos = ["String", 4.5, undefined , [],  "codespace", {}] ;
 
 function getTypes (a) {
 
@@ -394,20 +396,25 @@ getParsedNumbers(myNumString);
 
 console.log("APARTADO 22");
 
-function myNumber1 (n) {
+// function myNumber1 (n) {
 
-    if (n >= 0) {
+//     if (n >= 0) {
     
-        console.log("postivo");
+//         console.log("postivo");
         
-    } else {
-        console.log("negativo");
-    }
+//     } else {
+//         console.log("negativo");
+//     }
 
 
-}
+// }
 
-myNumber1(-7);
+// myNumber1(-7);
+
+const isPositive = num => num >= 0 ? "Positive" : "Negative";
+console.log(isPositive(-5));
+console.log(isPositive(5));
+console.log(isPositive(0));
 
 //Apartado-23 / Crea una función que dado un array cualquiera y un índice, 
 //borre el elemento guardado en ese índice.
@@ -425,10 +432,30 @@ function deleteElement (a, b) {
 
 deleteElement(newArray, 0);
 
+//const removeItem = (array, index) => array.splice(index, 1);
+
 // Apartado 24 / Usando la función del apartado anterior, crea otra función que dado un array de números y un número a
 //filtrar, devuelva un array borrando todos las apariciones de dicho número.
 
+console.log("APARTADO 24");
 
+const removeItem = (array, index) => array.splice(index, 1);
+
+const filterItem = (array, numberToFilter) => {
+
+    array.forEach((element, index) => {
+
+        if (element === numberToFilter) {
+
+            removeItem(array, index);
+        }
+
+    });
+}
+
+const arrayFiltered = [1, 5, 6, 7, 5];
+filterItem(arrayFiltered, 5);
+console.log(arrayFiltered);
 
 //apartado - 25 / Crea dos funciones que recibirán un objeto, la primera devolverá un array con los nombres de todas sus
 //propiedades. La segunda devolverá un array con los valores de dichas propiedades.
