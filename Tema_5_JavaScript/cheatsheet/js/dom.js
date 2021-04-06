@@ -63,6 +63,8 @@ parent1.classList.remove("bg-dark");
 console.log("Classlist: " , parent1.classList);
 parent1.classList.add("bg-red")
 console.log("Classlist: ", parent1.classList);
+parent1.className = " "// Selecciona todas las "clases";
+parent1.className =+ " "//Puedes añadir utilizando "=+";
 
 parent1.classList.toggle("bg-red"); 
 // toggle : Alterna la clase, si no esta , la incluye , si esta la elimina.

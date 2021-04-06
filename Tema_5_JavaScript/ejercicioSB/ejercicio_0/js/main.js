@@ -482,6 +482,7 @@ function myObjectvalue(b) {
 
 }
 
+// const myObjectvalue = (b) => Object.value (b)-- Funcion de flecha;
 
 
 myObject(address1);
@@ -511,6 +512,9 @@ console.log("APARTADO 27");
 let h = "darth coder";
 let i = "Darth CODER";
 
+let k = "HOLA MUNDO";
+let l = "hola mundo";
+
 function misLetras (a ,b) {
  
     a = a.toLowerCase();
@@ -527,6 +531,7 @@ function misLetras (a ,b) {
 }
 
 misLetras (h , i);
+misLetras (k , l);
 
 //Apartado- 28 / Crea una función que convierta en mayúscula sólo la primera letra de cada palabra de un string dado. El
 //apartado 11 será de ayuda. Investigar cómo unir un array de strings en un único string.
@@ -537,13 +542,27 @@ console.log("APARTADO 28");
 let j = "comprobare los errores de la consola antes de pedir ayuda";
 
 
+    function letraMayuscula (a) {
 
-    j = j.toLowerCase()
-    .split(' ')
-    .map((a) => a.charAt(0).toUpperCase() + a.substring(1))
-    .join(' ');
+        a = a.toLowerCase()
+        .split(' ')
+        .map((a) => a.charAt(0).toUpperCase() + a.substring(1))
+        .join(' ');
 
-    console.log(j);
+        console.log(a);
+
+    }
+
+    letraMayuscula(j);
+    
 
 
+// Apartado- 29 / Crea una funcion en una unica linea que reciba un valor logico
+// y devuelva el contrario. 
 
+console.log("APARTADO 29");
+
+const negate = (logical) => !logical;
+
+console.log(negate(true));
+console.log(negate(false));
