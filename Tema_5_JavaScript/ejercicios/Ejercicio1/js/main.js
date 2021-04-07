@@ -128,3 +128,53 @@ document.querySelector("#colorsSelect").addEventListener("change", e => {
 });
 
 //Apartado 10
+
+const currentRandom = document.getElementById("currentRandom");
+const totalNumbers = document.getElementById("totalNumbers");
+const oddNumbers = document.getElementById("oddNumbers");
+const evenNumbers = document.getElementById("evenNumbers");
+
+document.getElementById("randomButton").onclick = () => {
+
+    const randomNumber = Math.floor(Math.random() * 100) // puede ser tambien parseInt
+    currentRandom.textContent = randomNumber;
+
+    totalNumbers.textContent++;
+    // totalNumbers.textContent = Number(totalNumbers.textContent) + 1;
+
+    randomNumber % 2 === 0 ? evenNumbers.textContent++ : oddNumbers.textContent++;
+};
+
+//Apartado 11
+const ul_2 = document.getElementById("ul-2");
+const input_4 = document.getElementById("input-4");
+const button_11 = document.getElementById("button-6");
+
+ 
+
+const myArray = [];
+
+ 
+
+function addNumber() {
+    const num = input_4.value;
+    if (myArray.includes(num)) {
+        alert("error");
+    } else {
+        const li = document.createElement("li");
+        ul_2.prepend(li);
+        li.textContent = num;
+        myArray.push(num);
+    }
+}
+
+ 
+
+button_11.addEventListener("click", addNumber);
+
+//Apartado 12 
+
+document.querySelector("#toggler").onclick = (e) => e.target.classList.toggle("btn");
+
+//Apartado extra / Refactorizar codigo (Cambiar un codigo existente para limpiar y depurar codigo existente y que asi sea mas legible.)
+

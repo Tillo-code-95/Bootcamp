@@ -202,7 +202,40 @@ const person3 = {
 }
 
 person3.talk();
-console.clear();
+
+//Object Constructor using functions
+
+function Car(brand ,color ,weight ,topSpeed) {
+    this.brand = brand;
+    this.color = color;
+    this.weight = weight;
+    this.topSpeed = topSpeed;
+    this.getDescription = function() {
+        return `This ${this.color}, ${this.brand} weights ${this.weight}` +
+        `kilos and can reach up to ${this.topSpeed} kms/h `;
+    }
+}
+
+const car1 = new Car("Mercedes", "red", 2000, 200);
+const car2 = new Car("Volvo", "white", 2500,180);
+const car3 = new Car("Volskwagen", "blue", 1500, 175);
+
+console.log(car1, car2, car3);
+
+console.log(car2.weight);
+
+console.log(car3.getDescription());
+
+
+
+
+
+
+
+
+
+
+ console.clear();
 
 //--------------Arrays----------------
 
