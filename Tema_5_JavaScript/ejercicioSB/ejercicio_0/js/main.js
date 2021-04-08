@@ -92,13 +92,23 @@ console.log(`Has vivido `, myAge (25) , `dias`);
 
 console.log("APARTADO 8");
 
-function devolverArray (e) {
+// function devolverArray (e) {
 
-    console.log(e[e.length -1]);
+//     console.log(e[e.length -1]);
+// }
+
+//devolverArray = e => console.log(e[e.length -1]);
+
+const devolverArray = function (e) {
+    console.log( `El ultimo valor de mi array es :`, e [e.length -1]);
 }
+
+
 
 devolverArray(myArray);
 devolverArray(myHome);
+
+
 
 // Cuando introducimos e por argumento y calculamos que nos devuelva el ultimo
 // valor de un array al llamar a la funcion fuera de las llaves nos imprime
@@ -111,34 +121,58 @@ devolverArray(myHome);
 
 console.log("APARTADO 9");
 
-function miGranja (p, c, v) {
+//function miGranja (p, c, v) {
+    //p = p * 2;
+    //c = c * 4;
+    //v = v * 4;
+    //console.log(`El numero total de patas es : ${p + c + v}`);
+//}    // el signo $ se utiliza para incluir parametros en un string y que este no se convierta en string.
+
+const miGranja = function (p, c, v) {
+
     p = p * 2;
     c = c * 4;
     v = v * 4;
-    console.log(`El numero total de patas es : ${p + c + v}`);
-}    // el signo $ se utiliza para incluir parametros en un string y que este no se convierta en string.
 
-miGranja(5, 6 ,8);
+    console.log(` El numero total de patas es : ${p + c + v}`);
+}
+
+
+
+miGranja(50, 60 ,80);
 
 // Apartado - 10 / . Crea una función que determine si dos 
 //datos recibidos por argumentos son del mismo tipo.
 
 console.log("APARTADO 10");
 
-function miTipo (i , j) {
+// function miTipo (i , j) {
+
+//     if (typeof i === typeof j) {
+
+//        console.log("Es el mismo tipo"); 
+    
+//     } else {
+//         console.log("No es el mismo tipo"); 
+//     }
+
+    
+// }
+
+const miTipo = function (i , j) {
 
     if (typeof i === typeof j) {
 
-       console.log("Es el mismo tipo"); 
-    
-    } else {
-        console.log("No es el mismo tipo"); 
-    }
+        console.log("Es el mismo tipo"); 
+     
+     } else {
+         console.log("No es el mismo tipo"); 
+     }
 
-    
+     
 }
 
-miTipo(6 , 5);
+miTipo(-9 , 5);
 
 // Apartado- 11 / Crea una función que reciba un string con una frase y devuelva un array donde cada elemento será una
 //palabra de la frase original. Investigar método existente de los strings para este fin
@@ -148,14 +182,22 @@ console.log("APARTADO 11");
 let a = "Hola desde el apartado once";
 let b = "Hola desde una segunda frase";
 
-function myString (s) {
+// function myString1 (s) {
    
+//     s = s.split(" ");
+//     console.log(s);
+// }
+
+const myString1 = function (s) {
+
     s = s.split(" ");
     console.log(s);
+
 }
 
-myString(a);
-myString(b);
+myString1(a);
+myString1(b);
+
 
 
 // apartado - 12 / Inicializa dos objetos, address1 y address2 
@@ -251,7 +293,7 @@ console.log("APARTADO 15");
 let d = "Mi string uno";
 let e = "Mi string cuatro";
 
-function myString1 (l, m) {
+function myString2 (l, m) {
 
     if (l.length === m.length){
 
@@ -261,7 +303,7 @@ function myString1 (l, m) {
     }
 }
 
-myString1 (d, e);
+myString2 (d, e);
 
 //Apartado 16 - Crea una función que reciba un string y determine 
 //si está vacío sin utilizar la propiedad length.
@@ -270,7 +312,7 @@ console.log("APARTADO 16");
 
 let f = "No estoy vacio";
 
-function myString2(s) {
+function myString3(s) {
     
     if ( s === "" ) {
         console.log(true);
@@ -282,7 +324,7 @@ function myString2(s) {
 
 }
 
-myString2(f);
+myString3(f);
 
 //Apartado - 17 Imprimir elemento a elemento el array del apartado 1 de cuatro formas diferentes:
 //• while • for • for of • forEach.
@@ -460,6 +502,14 @@ console.log(arrayFiltered);
 //apartado - 25 / Crea dos funciones que recibirán un objeto, la primera devolverá un array con los nombres de todas sus
 //propiedades. La segunda devolverá un array con los valores de dichas propiedades.
 //Investigar los métodos keys y values del prototipo de Object.
+
+//   616 11 47 77 Enrique 
+//  precio/hora : 
+
+//  lugar :
+//  hora :
+//  fecha :
+//  
 
 console.log("APARTADO 25");
 
