@@ -40,6 +40,8 @@ listItems[0].addEventListener("click", changeImage);
 listItems[1].addEventListener("click", changeImage);
 listItems[2].addEventListener("click", changeImage);
 
+
+
 // v2 - Autoría Juan Alberto
 //const list = document.querySelector("ul");
 //const image = document.querySelector("img")
@@ -178,3 +180,16 @@ document.querySelector("#toggler").onclick = (e) => e.target.classList.toggle("b
 
 //Apartado extra / Refactorizar codigo (Cambiar un codigo existente para limpiar y depurar codigo existente y que asi sea mas legible.)
 
+// Apuntes extra
+//- Cuando queramos iterar arrays
+// for of
+// forEach
+
+// - Cuando no sepamos la cantidad de iteraciones
+// while
+
+// - Cuando queramos iterar propiedades de un objeto
+// for in
+
+// - Cuando ninguno de los anteriores nos valga
+// for común (for i = 0; i < max; i++)
