@@ -90,7 +90,7 @@ function processProducts (e) {
 
 //Añadir listeners
 
-select.addEventListener("change", e => {
+select.addEventListener("change", () => {
     const selectedUser = users.find(user => user.name === select.value);
 
     fillList(selectedUser);
