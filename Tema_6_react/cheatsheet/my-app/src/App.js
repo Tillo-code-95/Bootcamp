@@ -1,11 +1,16 @@
 
 import './App.css';
-import FirstComponent from './components/FirstComponent';
+import FirstComponent,{SecondComponent, ThirdComponent} from './components/FirstComponent';
+
 
 function App() {
   return (
     <div className="App">
-      <FirstComponent></FirstComponent>
+      <FirstComponent title = "Titulo enviado desde el padre" date = "16 agosto 2025"></FirstComponent>
+      <FirstComponent title = "Otro titulo"/>
+      <SecondComponent/>
+      <ThirdComponent/> 
+      {/* Se puede abrir y cerrar etiquetas en la misma linea */}
     </div>
   );
 }
