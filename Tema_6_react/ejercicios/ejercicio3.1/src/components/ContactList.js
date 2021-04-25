@@ -1,4 +1,11 @@
-export default function ContactList({contacts}) {
+export default function ContactList({contacts, setContacts}) {
+
+    const removeContact = phoneNumber => {
+
+        return e => {
+            setContacts(contacts.filter(contact => contact.phoneNumber !== phoneNumber))
+        }
+    }
 
     return (
         <div className = "row">
@@ -10,6 +17,10 @@ export default function ContactList({contacts}) {
                         <li className="list-group-item">{contact.lastName}</li>
                         <li className="list-group-item">{contact.phoneNumber}</li>
                         <li className="list-group-item">{contact.address},{contact.postalCode},{contact.city}</li>
+                        <li className="list-group-item">
+                        <button className="btn btn-warning"  onClick = {removeContact(contact.phoneNumber)}>Eliminar</button>
+                        </li>
+                        
                         
                     </ul>
                 )
