@@ -1,11 +1,14 @@
 
-import { Component } from 'react';
+import { Component, useContext } from 'react';
 import './App.css';
 import FirstComponent,{SecondComponent, ThirdComponent} from './components/FirstComponent';
 import Counter from "./components/Counter"
-import {useState} from "react";
 import useEffectComponent from   './components/useEffectComponent';
+import UseContextComponent from   './components/UseContextComponent';
 
+import {useState, createContext} from "react";
+
+export const GlobalContext = createContext({});
 
 function App() {
 
@@ -14,14 +17,22 @@ function App() {
 
   return (
     <div className="App">
-      {show && <useEffectComponent />}
-      <button onClick = {() => setShow(!show)}>Show</button>
+      {/* {show && <useEffectComponent />}
+      <button onClick = {() => setShow(!show)}>Show</button> */}
       {/* <Counter />
       <FirstComponent title = "Titulo enviado desde el padre" date = "16 agosto 2025"></FirstComponent>
       <FirstComponent title = "otro titulo"/>
       <SecondComponent/>
       <ThirdComponent/>  */}
       {/* Se puede abrir y cerrar etiquetas en la misma linea */}
+
+      <GlobalContext.Provider value = "Soy un string guardado en in contexto">
+
+        <UseContextComponent /> 
+
+      </GlobalContext.Provider>
+
+
     </div>
   );
 }

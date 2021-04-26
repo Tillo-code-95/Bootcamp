@@ -1,32 +1,33 @@
-export default function ListToDoes(props) {
 
-    // function croosout() {
-       
-        
-    // }
+import './TodoList.css'
 
+export default function ListToDoes({toDo, setListToDoes }) {
 
+    const removeTodo = (title) => setListToDoes(toDo.filter(t => t.title !== title));
+
+    const toggleCompleted = (e, index) => {
+        if(e.target.tagName !== "BUTTON") {
+            const newTodos = [...toDo];
+            newTodos[index].completed = !newTodos[index].completed;
+            setListToDoes(newTodos);
+        }
+    }
+    
     return (
 
-        <div>
-            { props.toDo.map((lista) => {
-
+        <ul className = "list-group">
+            {toDo.map((list, index) => {
+                let className = "list-group-item";
+                if (list.completed) {
+                    className += " completed"
+                }
                 return (
+                        <li className={className} onClick= {e => toggleCompleted(e, index)}>
+                            {index}:{list.title}
+                            <button className = "btn bg-danger float-right" onClick={() => removeTodo(list.title)}>X</button>
+                        </li>
+                )})}
 
-                    <ul>
-                        <li className="list-group-item">{lista.userId}:{lista.title}{lista.completed} <button className = "btn bg-danger float-right">X</button></li>
-                        
-                    </ul>
-
-                    
-                )
-
-
-
-            })}
-
-            
-
-        </div>
+        </ul>
     )
 } 
