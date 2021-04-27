@@ -3,10 +3,10 @@
 export default function List(props) {
     return (
         <div>
-            <h2>{props.categoria}</h2>
+            <h2>{props.category}</h2>
             <ol>
-                {props.productos.map(producto => 
-               <li key = {producto.id}> {producto.name} {producto.marca} precio :{producto.precio}</li>)}
+                {props.products.map(product => 
+               <li key = {product.id}> {product.name} {product.brand} precio :{product.price}</li>)}
             </ol>
 
         </div>

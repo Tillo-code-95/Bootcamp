@@ -1,7 +1,7 @@
 
-import Card from "./components/card"
+import Card from "../components/card"
 
-function App() {
+function App1() {
   return (
     <div className="App">
       <Card 
@@ -20,4 +20,4 @@ function App() {
 
 
 
-export default App;
+export default App1;

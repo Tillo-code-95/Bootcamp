@@ -1,8 +1,8 @@
 
-import './App.css';
-import Shop from "./component/Shop"
+//import './App.css';
+import Shop from "../components/Shop"
 
-function App() {
+function App2() {
   return (
     <div className="App">
       <Shop/>
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default App2;

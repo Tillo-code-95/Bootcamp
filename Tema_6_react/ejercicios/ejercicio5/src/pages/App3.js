@@ -1,10 +1,13 @@
 import {useState} from "react";
-import './App.css';
-import ContactList from "./components/ContactList";
-import NewContactForm from "./components/NewContactForm"
+//import './App.css';
+import ContactList from "../components/ContactList";
+import NewContactForm from "../components/NewContactForm";
+
+//import NewContactForm from "./components/NewContactForm"
 
 
-function App() {
+
+function App3() {
 
   const initialState = [
     {name : "Federico", lastName:"Garcia Lorca", address:"Calle X", city:"Grananda", postalCode : 27009, phoneNumber:756432124},
@@ -36,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default App3;
