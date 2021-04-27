@@ -1,18 +1,22 @@
 
-import { Component, useContext } from 'react';
-import './App.css';
-import FirstComponent,{SecondComponent, ThirdComponent} from './components/FirstComponent';
-import Counter from "./components/Counter"
-import useEffectComponent from   './components/useEffectComponent';
-import UseContextComponent from   './components/UseContextComponent';
+//import { Component, useContext } from 'react';
 
-import {useState, createContext} from "react";
+// import FirstComponent,{SecondComponent, ThirdComponent} from './components/FirstComponent';
+// import Counter from "./components/Counter"
+// import useEffectComponent from   './components/useEffectComponent';
+// import UseContextComponent from   './components/UseContextComponent';
 
-export const GlobalContext = createContext({});
+//import {useState, createContext} from "react";
+
+import Router from "./Router"
+import './App.css'
+//export const GlobalContext = createContext({});
+
+
 
 function App() {
 
-  const [show, setShow] = useState(true)
+  //const [show, setShow] = useState(true)
 
 
   return (
@@ -26,12 +30,13 @@ function App() {
       <ThirdComponent/>  */}
       {/* Se puede abrir y cerrar etiquetas en la misma linea */}
 
-      <GlobalContext.Provider value = "Soy un string guardado en in contexto">
+      {/* <GlobalContext.Provider value = "Soy un string guardado en in contexto">
 
         <UseContextComponent /> 
 
-      </GlobalContext.Provider>
+      </GlobalContext.Provider> */}
 
+      <Router />
 
     </div>
   );
