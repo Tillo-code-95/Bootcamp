@@ -7,7 +7,7 @@ import {useState , useEffect} from 'react'
 //https://raw.githubusercontent.com/BC-FSWD/todo-list/master/todo-list.json
 // Ruta de la API
 
-function App4() {
+export default function App4() {
 
   
 
@@ -34,4 +34,3 @@ function App4() {
   );
 }
 
-export default App4;

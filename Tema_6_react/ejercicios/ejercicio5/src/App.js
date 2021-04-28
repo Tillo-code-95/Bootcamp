@@ -1,10 +1,11 @@
 // Importar todas las apps de los ej anteriores
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom'
 import './App.css';
 import App1 from '../src/pages/App1'
 import App2 from '../src/pages/App2'
 import App3 from '../src/pages/App3'
 import App4 from '../src/pages/App4'
-import { BrowserRouter, NavLinks, Route, Switch } from 'react-dom'
+
 import {createContext} from "react"
 
 export const GlobalContext = createContext({});
@@ -16,19 +17,19 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <nav>
-          <NavLinks activeClassName="active text-success" to="/pages/App1">Ejercicio 1</NavLinks>
-          <NavLinks activeClassName="text-success" to="/pages/App2">Ejercicio 2</NavLinks>
-          <NavLinks activeClassName="text-success" to="/pages/App3">Ejercicio 3</NavLinks>
-          <NavLinks activeClassName="text-success" to="/pages/App4">Ejercicio 4</NavLinks>
+        <nav className = "navbar px-5 py-3 bg-dark">
+          <NavLink exact to ="/"    activeClassName="active text-success"  >Ejercicio 1</NavLink>
+          <NavLink to="/pages/App2" activeClassName="text-success" >Ejercicio 2</NavLink>
+          <NavLink to="/pages/App3" activeClassName="text-success" >Ejercicio 3</NavLink>
+          <NavLink to="/pages/App4" activeClassName="text-success" >Ejercicio 4</NavLink>
         </nav>
         
         
         <Switch>
-          <Route exact path = "/pages/App1" component = {App1} />
-          <Route exact path = "/pages/App2" component = {App2} />
-          <Route exact path = "/pages/App3" component = {App3} />
-          <Route exact path = "/pages/App4" component = {App4} />
+          <Route exact path = "/" component = {App1} />
+          <Route  path = "/pages/App2" component = {App2} />
+          <Route  path = "/pages/App3" component = {App3} />
+          <Route  path = "/pages/App4" component = {App4} />
         </Switch>
 
 

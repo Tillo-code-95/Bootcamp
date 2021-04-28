@@ -1,0 +1,5 @@
+.completed {
+    background-color: #ddd !important;
+    color:#333 !important;
+    text-decoration: line-through !important;
+}

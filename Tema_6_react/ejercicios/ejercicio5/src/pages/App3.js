@@ -7,7 +7,7 @@ import NewContactForm from "../components/NewContactForm";
 
 
 
-function App3() {
+export default function App3() {
 
   const initialState = [
     {name : "Federico", lastName:"Garcia Lorca", address:"Calle X", city:"Grananda", postalCode : 27009, phoneNumber:756432124},
@@ -39,4 +39,3 @@ function App3() {
   );
 }
 
-export default App3;
