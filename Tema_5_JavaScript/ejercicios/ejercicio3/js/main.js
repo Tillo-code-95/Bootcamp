@@ -100,7 +100,7 @@ console.log("8 / 8.2 : Calcular el sueldo medio de la empresa",averageSalary );
 employees = employees.map(employee => {
     if(employee.rendimiento > 0.7) {
         employee.salario = employee.salario * 1.25;
-        console.log("Subido el sueldo de", employee.cargo);
+        console.log("Subido el sueldo de", employee.cargo ,"y su sueldo", employee.salario);
     }
 });
 
@@ -115,3 +115,5 @@ employees = employees.map(employee => {
 
 
 console.log("8 / 8.3 : Subir el sueldo de los que tengan un rendimiento de 0.7",averageSalary );
+
+
