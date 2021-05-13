@@ -11,39 +11,64 @@
 
 
 
-
+require("./config/config");
 const express = require("express");
 const app = express();
 
 //pkill -f nodemon -> lo hacemos para eliminar todos los nodemon que hay por detras.
 
-//Antes de 
+
 app.use(express.json());
 
+let users = []
 
-app.get("/user", (req, res) => {
-    res.json({message : "peticion GET recibida correctamente"});
+app.get("/", (req, res) => {
+    
+    const user = {name:"John", email:"john@gmail.com"}
+
+    res.json({
+       ok:true, results:users
+    });
 });
 
 app.post("/", (req, res) => {
-    let body = req.body
-    
+    const body = req.body; // necesita el middleware, definido arriba: app.use(express.json());
 
-    res.json({
-       
-        message : "peticion POST recibida correctamente",
-        username: body.username
-    });
+ 
+
+    if (body.username) {
+        res.status(400).json({ ok: false, message: "Name is required" });
+    } else {
+        users.push(body);
+        res.status(201).json({ user: body });
+    }
 });
 
-app.put("/user/:id", (req, res) => {
-    let body = req.body
+app.put("/:id", (req, res) => {
+    let id = req.params.id
     
     res.json({
-        message : "peticion PUT recibida correctamente",
-        id: body.id
+        message :`peticion PUT recibida correctamente, ${id}`
+        
     });
 
 });
 
-app.listen(3000);
+app.delete("/:id", (req, res) => {
+    const id = req.params.id
+    
+    const removedUser = users.splice(id, 1);
+
+    res.status(200).json(removedUser);
+
+    // res.json({
+    //     message :`peticion DELETE recibida correctamente, ${id}`
+        
+    // });
+
+});
+
+
+app.listen(process.env.PORT, () => {
+    console.log("Listening on port : ", process.env.PORT);
+});
