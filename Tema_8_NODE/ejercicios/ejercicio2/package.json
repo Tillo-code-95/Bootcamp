@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio2",
+  "version": "1.0.0",
+  "description": "A completed API using exercise 4 react",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "TilloDmx",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
