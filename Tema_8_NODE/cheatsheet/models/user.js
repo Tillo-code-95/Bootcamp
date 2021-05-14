@@ -6,6 +6,7 @@ let Schema = mongoose.Schema;
 const validRoles = {
     values : ["ADMIN", "USER"],
     message: "{VALUE} is not a valid role"
+   
 }
 
 let userSchema = new Schema({
@@ -37,6 +38,16 @@ let userSchema = new Schema({
         default : true
     }
 });
+
+userSchema.methods.toJSON= function() {
+    const user = this;
+
+    const userObject = user.toObject();
+
+    delete userObject.password
+    
+    return userObject;
+}
 
 userSchema.plugin(uniqueValidator, {message: "{PATH} should be unique"});
 
