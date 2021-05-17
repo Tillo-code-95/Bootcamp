@@ -4,13 +4,25 @@ const bcrypt = require("bcrypt");
 const router = express();
 
 const User = require("../models/user");
+const verifyToken = require("../middlewares/auth")
+
+// const middleware1 = (req, res, next) => {
+//     console.log("Hola desde el middleware 1");
+//     next();
+// }
+// const middleware2 = (req, res, next) => {
+//     console.log("Hola desde el middleware 2");
+//     next();
+// }
 
 //Antes de los endpoints, usamos los middlewares
 // cambiamos los app por router
 
 router.use(express.json());
 
-router.get("/", (req, res)=> {
+router.get("/", verifyToken, async (req, res)=> {
+   
+
     // Simila al find de mongo. Si el filtro esta vacio,
     // me devuelve todos los documentos.
     const PAGE_SIZE = 2;
